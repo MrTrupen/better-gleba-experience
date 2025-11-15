@@ -1,0 +1,11 @@
+{
+    "name": "better_gleba_experience",
+    "version": "0.1.1",
+    "title": "Better Gleba Experience",
+    "author": "Trupen",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base >= 2.0"
+    ],
+    "description": "description"
+}
