@@ -7,6 +7,7 @@ simple_biochamber.energy_source = {
     emissions_per_minute = {pollution = -1}
 }
 simple_biochamber.minable = {mining_time = 0.1, result = "simple-biochamber"}
+simple_biochamber.crafting_speed = simple_biochamber.crafting_speed * 0.25
 
 data:extend {simple_biochamber}
 
