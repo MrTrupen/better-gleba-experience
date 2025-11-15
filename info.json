@@ -7,5 +7,9 @@
     "dependencies": [
         "base >= 2.0"
     ],
-    "description": "description"
+    "description": "Simplifies early game on gleba by introducing slower biochamber which do not require nutrients to run",
+    "dependencies": [
+    "base",
+    "space-age"
+    ]
 }
