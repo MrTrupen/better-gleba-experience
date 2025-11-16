@@ -1,15 +1,27 @@
 {
     "name": "better-gleba-experience",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "title": "Better Gleba Experience",
     "author": "Trupen",
+    "contact": "https://www.discord.gg/trupen",
+    "homepage": "https://github.com/MrTrupen/better-gleba-experience",
     "factorio_version": "2.0",
-    "dependencies": [
-        "base >= 2.0"
-    ],
-    "description": "Simplifies early game on gleba by introducing slower biochamber which do not require nutrients to run",
     "dependencies": [
     "base",
     "space-age"
-    ]
+    ],
+    "description": "Simplifies early game on gleba by introducing slower biochamber which do not require nutrients to run",
+    "package": {
+        "git_publish_branch": "main",
+        "gallery": [
+            "gallery/compare_biochambers.png"
+        ],
+        "ignore": [
+            ".git",
+            "graphics/*.afphoto",
+            "gallery/**"
+        ],
+        "readme": "README.md",
+        "sync_portal_details": true
+    }
 }
