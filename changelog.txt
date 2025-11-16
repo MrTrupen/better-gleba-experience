@@ -1,12 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
-Date: ????
+Date: 2025-11-16
   Changes:
+    - Balance basic biochamber
+    - Update info on everything
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2025-11-16
   Info:
-    - small balance changes
+    - Small balance changes
   Debug:
     - Implement integration between mod's code and VScode extension
 ---------------------------------------------------------------------------------------------------
