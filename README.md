@@ -9,12 +9,12 @@ It's something like basic oil processing and advanced oil processing, start simp
 
 ## Normal Biochamber vs Basic Biochamber
 
-Modules slots: 4 -> 0
-Productivity bonus: 50% -> 25%
-Crafting speed: 2x -> 0.5x
-Power usage: nutrients -> electricity (50kW)
-Beacons: affected by beacons -> not affected
-Pollution: reduce pollution (-1) -> produce pollution (1)
+- Modules slots: 4 -> 0
+- Productivity bonus: 50% -> 25%
+- Crafting speed: 2x -> 0.5x
+- Power usage: nutrients -> electricity (50kW)
+- Beacons: affected by beacons -> not affected
+- Pollution: reduce pollution (-1) -> produce pollution (1)
 
 ## Installation
 
