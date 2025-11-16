@@ -2,12 +2,19 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 
 local simple_biochamber = table.deepcopy(data.raw["assembling-machine"]["biochamber"])
 simple_biochamber.name = "simple-biochamber"
-simple_biochamber.energy_source = {
-    type = "void",
-    emissions_per_minute = {pollution = -1}
+simple_biochamber.energy_source =
+{
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 1}
 }
+simple_biochamber.energy_usage = "50kW"
 simple_biochamber.minable = {mining_time = 0.1, result = "simple-biochamber"}
 simple_biochamber.crafting_speed = simple_biochamber.crafting_speed * 0.25
+simple_biochamber.module_slots = 0
+simple_biochamber.allowed_effects = {}
+simple_biochamber.effect_receiver = {base_effect = {productivity = 0.25}}
+
 
 data:extend {simple_biochamber}
 
