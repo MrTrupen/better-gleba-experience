@@ -3,3 +3,10 @@ Version: 0.1.1
 Date: 15.11.2025
   Info:
     - Mod init
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2025-11-16
+  Info:
+    - small balance changes
+  Debug:
+    - Implement integration between mod's code and VScode extension
