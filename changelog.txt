@@ -3,6 +3,7 @@ Version: 0.1.4
 Date: 2025-11-26
   Changes:
     - Moved prototypes logic from data-final-fixes.lua to just data.lua
+    - Basic biochamber produce spores while working
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2025-11-16

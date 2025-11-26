@@ -6,7 +6,7 @@ basic_biochamber.energy_source =
 {
     type = "electric",
     usage_priority = "secondary-input",
-    emissions_per_minute = {pollution = 1, spores = 1}
+    emissions_per_minute = {pollution = 1, spores = 0.25}
 }
 basic_biochamber.energy_usage = "50kW"
 basic_biochamber.minable = {mining_time = 0.1, result = "basic-biochamber"}
