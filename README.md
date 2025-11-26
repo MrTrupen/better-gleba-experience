@@ -14,7 +14,7 @@ It's something like basic oil processing and advanced oil processing, start simp
 - Crafting speed: 2x -> 0.5x
 - Power usage: nutrients -> electricity (50kW)
 - Beacons: affected by beacons -> not affected
-- Pollution: reduce pollution (-1) -> produce pollution (1)
+- Pollution: reduce pollution (-1) -> produce pollution (1); produce spores (0.25)
 
 ## Installation
 
