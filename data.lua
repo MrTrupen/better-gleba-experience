@@ -43,6 +43,7 @@ data:extend({
         drop_sound = item_sounds.fluid_inventory_move,
         place_result = "basic-biochamber",
         stack_size = 20,
+        weight = 10 * kg,
         default_import_location = "gleba"
     },
     {
