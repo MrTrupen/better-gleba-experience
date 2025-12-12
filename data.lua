@@ -52,7 +52,9 @@ data:extend({
             {type = "item", name = "electronic-circuit", amount = 5},
             {type = "item", name = "landfill",           amount = 1}
         },
-        results = {{type = "item", name = "basic-biochamber", amount = 1}},
+        results = {
+            {type = "item", name = "basic-biochamber", amount = 1}
+        },
         enabled = false
     }
 })
@@ -77,6 +79,14 @@ data.raw.technology["biochamber"].effects = {
     {
         type = "unlock-recipe",
         recipe = "pentapod-egg"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "stable-pentapod-egg"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "unstable-pentapod-egg"
     }
 }
 
@@ -86,3 +96,44 @@ data.raw["recipe"]["biochamber"].ingredients = {
     {type = "item", name = "iron-plate",         amount = 20},
     {type = "item", name = "electronic-circuit", amount = 5}
 }
+
+--  Stable pentapod egg  --
+
+-- Item
+local stable_pentapod_egg = table.deepcopy(data.raw["item"]["pentapod-egg"])
+stable_pentapod_egg.name = "stable-pentapod-egg"
+stable_pentapod_egg.spoil_ticks = 0
+
+-- Recipe
+local stable_pentapod_egg_recipe = table.deepcopy(data.raw["recipe"]["pentapod-egg"])
+stable_pentapod_egg_recipe.name = "stable-pentapod-egg"
+stable_pentapod_egg_recipe.category = "organic-or-hand-crafting"
+stable_pentapod_egg_recipe.ingredients = {
+    {type = "item", name = "pentapod-egg", amount = 10},
+    {type = "item", name = "nutrients",    amount = 100}
+}
+stable_pentapod_egg_recipe.results = {
+    {type = "item", name = "stable-pentapod-egg", amount = 1}
+}
+stable_pentapod_egg_recipe.surface_conditions = {}
+
+-- data extend
+data:extend {stable_pentapod_egg, stable_pentapod_egg_recipe}
+
+
+--  Unstable pentapod egg  --
+
+-- Recipe
+local unstable_pentapod_egg_recipe = table.deepcopy(data.raw["recipe"]["pentapod-egg"])
+unstable_pentapod_egg_recipe.name = "unstable-pentapod-egg"
+unstable_pentapod_egg_recipe.category = "organic-or-hand-crafting"
+unstable_pentapod_egg_recipe.ingredients = {
+    {type = "item", name = "stable-pentapod-egg", amount = 1}
+}
+unstable_pentapod_egg_recipe.results = {
+    {type = "item", name = "pentapod-egg", amount = 1}
+}
+unstable_pentapod_egg_recipe.surface_conditions = {}
+
+-- data extend
+data:extend {unstable_pentapod_egg_recipe}
