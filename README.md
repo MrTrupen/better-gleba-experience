@@ -16,6 +16,10 @@ It's something like basic oil processing and advanced oil processing, start simp
 - Beacons: affected by beacons -> not affected
 - Pollution: reduce pollution (-1) -> produce pollution (1); produce spores (0.25)
 
+## Stable Pentapod Egg
+
+Stable non-spoiling pentapod eggs which can be turned back into normal pentapod eggs when needed.
+
 ## Installation
 
 Download and install from the [official Factorio mod

@@ -1,6 +1,6 @@
 {
     "name": "better-gleba-experience",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "title": "Better Gleba Experience",
     "author": "Trupen",
     "contact": "https://www.discord.gg/trupen",
@@ -14,7 +14,8 @@
     "package": {
         "git_publish_branch": "main",
         "gallery": [
-            "gallery/compare_biochambers.png"
+            "gallery/compare_biochambers.png",
+            "gallery/stable_pentapod_egg.png"
         ],
         "ignore": [
             ".git",
