@@ -3,6 +3,7 @@ Version: 0.1.5
 Date: 2025-12-12
   Changes:
     - Add stable and unstable pentapod egg
+    - Add tint for basic biochamber
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2025-11-26

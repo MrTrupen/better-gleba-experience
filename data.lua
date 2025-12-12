@@ -2,6 +2,13 @@ local item_sounds = require("__base__.prototypes.item_sounds")
 
 local basic_biochamber = table.deepcopy(data.raw["assembling-machine"]["biochamber"])
 basic_biochamber.name = "basic-biochamber"
+basic_biochamber.icons = {
+    {
+        icon = "__space-age__/graphics/icons/biochamber.png",
+        icon_size = 64,
+        tint = {r = 0.3, g = 0.45, b = 1, a = 1}
+    }
+}
 basic_biochamber.energy_source =
 {
     type = "electric",
@@ -22,7 +29,13 @@ data:extend({
     {
         type = "item",
         name = "basic-biochamber",
-        icon = "__space-age__/graphics/icons/biochamber.png",
+        icons = {
+            {
+                icon = "__space-age__/graphics/icons/biochamber.png",
+                icon_size = 64,
+                tint = {r = 0.3, g = 0.45, b = 1, a = 1}
+            }
+        },
         subgroup = "agriculture",
         order = "b[biochamber]",
         inventory_move_sound = item_sounds.fluid_inventory_move,
@@ -100,6 +113,13 @@ stable_pentapod_egg.spoil_ticks = 0
 local stable_pentapod_egg_recipe = table.deepcopy(data.raw["recipe"]["pentapod-egg"])
 stable_pentapod_egg_recipe.name = "stable-pentapod-egg"
 stable_pentapod_egg_recipe.category = "organic-or-hand-crafting"
+stable_pentapod_egg_recipe.icons = {
+    {
+        icon = "__space-age__/graphics/icons/pentapod-egg-3.png",
+        icon_size = 64,
+        tint = {r = 0.3, g = 0.45, b = 1, a = 1}
+    }
+}
 stable_pentapod_egg_recipe.ingredients = {
     {type = "item", name = "pentapod-egg", amount = 10},
     {type = "item", name = "nutrients",    amount = 100}
