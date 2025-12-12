@@ -14,7 +14,8 @@
     "package": {
         "git_publish_branch": "main",
         "gallery": [
-            "gallery/compare_biochambers.png"
+            "gallery/compare_biochambers.png",
+            "gallery/stable_pentapod_egg.png"
         ],
         "ignore": [
             ".git",
