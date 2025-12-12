@@ -79,14 +79,6 @@ data.raw.technology["biochamber"].effects = {
     {
         type = "unlock-recipe",
         recipe = "pentapod-egg"
-    },
-    {
-        type = "unlock-recipe",
-        recipe = "stable-pentapod-egg"
-    },
-    {
-        type = "unlock-recipe",
-        recipe = "unstable-pentapod-egg"
     }
 }
 
@@ -117,8 +109,29 @@ stable_pentapod_egg_recipe.results = {
 }
 stable_pentapod_egg_recipe.surface_conditions = {}
 
+-- Technology
+local stable_pentapod_technology = table.deepcopy(data.raw["technology"]["bioflux"])
+stable_pentapod_technology.name = "stable-pentapod-egg"
+stable_pentapod_technology.icon = "__space-age__/graphics/icons/pentapod-egg-3.png"
+stable_pentapod_technology.icon_size = 64
+stable_pentapod_technology.effects = {
+    {
+        type = "unlock-recipe",
+        recipe = "stable-pentapod-egg"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "unstable-pentapod-egg"
+    }
+}
+stable_pentapod_technology.research_trigger = {
+    type = "craft-item",
+    item = "pentapod-egg",
+    count = 100
+}
+
 -- data extend
-data:extend {stable_pentapod_egg, stable_pentapod_egg_recipe}
+data:extend {stable_pentapod_egg, stable_pentapod_egg_recipe, stable_pentapod_technology}
 
 
 --  Unstable pentapod egg  --
